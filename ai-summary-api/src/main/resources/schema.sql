@@ -1,6 +1,6 @@
-CREATE TABLE IF NOT EXISTS summary (
-    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS summaries (
+    id         BIGINT AUTO_INCREMENT PRIMARY KEY,
     original_text TEXT NOT NULL,
-    summary_text TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    summary    TEXT NOT NULL,
+    created_at TIMESTAMP NOT NULL
 );
